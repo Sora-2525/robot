@@ -110,9 +110,6 @@ def main():
             tracker.start_tracking()  # 🔥 クラスを直接呼び出す
             return
         
-        if "カチャカスタート" in transcription:
-            tts.say("ねえ、カチャカ")
-            return
 
         reply = query_chatgpt(transcription)
         print(f"🤖 ChatGPTの応答: {reply}")
